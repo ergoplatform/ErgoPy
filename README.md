@@ -1,7 +1,7 @@
 ErgoPy
 ======
 
-This is a collection of libraries that implements basic Ergo algorithms in Python and helps to integrate third-party applications written on Python with Ergo blockchain. It also helps to interact with Ergo blockchain.
+This is a collection of libraries that implements basic Ergo algorithms in Python and helps to integrate third-party applications written on Python with Ergo blockchain. It also helps to interact with Ergo blockchain from Python scripts and software.
 
 
 ## Requirements
