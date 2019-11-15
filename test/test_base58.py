@@ -28,8 +28,8 @@ class TestBase58(unittest.TestCase):
                 # We just check the integer to base58 here
                 pass
             else:
-                # We also skip result strings started by '1' (as it Bitcoin specifics) and zero number.
-                # They would be checked later
+                # We also skip result strings started by '1' (as it Bitcoin specifics)
+                # Zero number also skipped. It would be checked later
                 if num and s[0] != '1':
                     self.assertEqual(base58.b58encode_int(num), s.encode())
 
