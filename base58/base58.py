@@ -24,6 +24,8 @@ def b58validate(bytes58, alphabet=BASE58_ALPHABET):
 def b58encode_int(num, alphabet=BASE58_ALPHABET):
     """Encode an integer using Base58"""
     bytes58 = b""
+    if num == 0:
+        return b'1'
     while num:
         num, idx = divmod(num, 58)
         bytes58 = alphabet[idx:idx+1] + bytes58  # alphabet[idx:idx+1] gives byte, alphabet[idx] return integer
