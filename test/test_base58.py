@@ -7,7 +7,8 @@ class TestBase58(unittest.TestCase):
     test_vector = [
         [207427924114284569559298880779, b'DeadBeef12345joke'],
         [0, b'1'],
-        [1, b'2']
+        [1, b'2'],
+        [123456789, b'BukQL']
     ]
 
     def test_b58validate(self):
